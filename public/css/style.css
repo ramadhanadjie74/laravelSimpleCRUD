@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  font-family: 'montserrat', sans-serif;
+}
+
+a {
+  color: #03030C;
+}
+
+.navigasi {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  font-size: .8em;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.navigasi header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigasi header .company {
+  font-weight: bold;
+  padding: 1em;
+}
+
+.navigasi header .about-item {
+  margin-top: .2em;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  background-color: white;
+  top: 3em;
+  width: 14.15em;
+  z-index: 1;
+  left: 0;
+}
+
+.navigasi header .about:hover .about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigasi header .about-item li:hover {
+  background-color: rgba(51, 51, 51, 0.8);
+}
+
+.navigasi header .about {
+  position: relative;
+}
+
+.navigasi header ul {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigasi header ul li {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.halaman-pertama {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.halaman-pertama .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.halaman-pertama .slide .img-bg {
+  margin-top: 1em;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tabel{
+    z-index: 3;
+    position: absolute;
+    background-color: white;
+    top: 40%;
+    left: 25%;
+    border: black solid;
+    border-collapse: collapse;
+    
+}
+
+td{
+    width: 150px;
+    border: solid black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.navigasi-bar li:hover {
+  background-color: rgba(51, 51, 51, 0.09);
+}

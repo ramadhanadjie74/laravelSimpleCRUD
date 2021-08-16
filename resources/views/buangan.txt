@@ -1,0 +1,24 @@
+<table class="tabel" > 
+    <tr>
+        <td>No.</td>
+        <td>Nama</td>
+        <td>Alamat</td>
+        <td>No. KTP</td>
+        <td></td>
+    </tr>
+    @foreach($karyawan as $karyawan)
+    <tr>
+        <td>{{$karyawan['id']}}</td>
+        <td>{{$karyawan['Nama']}}</td>
+        <td>{{$karyawan['Alamat']}}</td>
+        <td>{{$karyawan['NoKtp']}}</td>
+        <td>
+            @csrf
+            <a href="delete/{{$karyawan->NoKtp}}">delete</a>
+            <a href="update/{{$karyawan->NoKtp}}">update</a>
+        </td>
+    </tr>
+
+    @endforeach
+
+</table>
